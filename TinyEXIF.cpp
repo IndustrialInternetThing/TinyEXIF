@@ -1126,6 +1126,10 @@ int EXIFInfo::parseFromXMPSegmentXML(const char* szXML, unsigned len) {
 		ParseXMP::Value(document, "drone-dji:CalibratedFocalLength", Calibration.FocalLength);
 		ParseXMP::Value(document, "drone-dji:CalibratedOpticalCenterX", Calibration.OpticalCenterX);
 		ParseXMP::Value(document, "drone-dji:CalibratedOpticalCenterY", Calibration.OpticalCenterY);
+
+		ParseXMP::Value(document, "drone-dji:FlightRollDegree", GeoLocation.FlightRollDegree);
+		ParseXMP::Value(document, "drone-dji:FlightPitchDegree", GeoLocation.FlightPitchDegree);
+		ParseXMP::Value(document, "drone-dji:FlightYawDegree", GeoLocation.FlightYawDegree);
 	} else
 	if (0 == strcasecmp(Make.c_str(), "senseFly") || 0 == strcasecmp(Make.c_str(), "Sentera")) {
 		ParseXMP::Value(document, "Camera:Roll", GeoLocation.RollDegree);

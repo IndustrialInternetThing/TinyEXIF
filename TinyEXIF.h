@@ -274,9 +274,12 @@ public:
 		double Altitude;                // Altitude in meters, relative to sea level
 		int8_t AltitudeRef;             // 0: above sea level, -1: below sea level
 		double RelativeAltitude;        // Relative altitude in meters
-		double RollDegree;              // Flight roll in degrees
-		double PitchDegree;             // Flight pitch in degrees
-		double YawDegree;               // Flight yaw in degrees
+		double RollDegree;              // Gimbal roll in degrees
+		double PitchDegree;             // Gimbal pitch in degrees
+		double YawDegree;               // Gimbal yaw in degrees
+		double FlightRollDegree;        // Flight roll in degrees
+		double FlightPitchDegree;       // Flight pitch in degrees
+		double FlightYawDegree;         // Flight yaw in degrees
 		double SpeedX;                  // Flight speed on X in meters/second
 		double SpeedY;                  // Flight speed on Y in meters/second
 		double SpeedZ;                  // Flight speed on Z in meters/second
